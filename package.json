@@ -1,0 +1,23 @@
+{
+  "name": "chatrooms",
+  "version": "1.0.0",
+  "description": "node_js_app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyally/chatrooms.git"
+  },
+  "author": "honcharov_anton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eyally/chatrooms/issues"
+  },
+  "homepage": "https://github.com/eyally/chatrooms#readme",
+  "dependencies":{
+    "socket.io":"~0.9.6",
+    "mime":"~1.2.7"
+  }
+}
