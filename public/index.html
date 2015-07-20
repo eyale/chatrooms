@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>chatrooms</title>
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container">
+			<h1 class="pull-right"><a href="#" class="navbar-brand">chatrooms </a><small>my_first_node_js_application</small></h1>
+		</div>
+	</nav>
+	<div id="content" class="container panel panel-default ">
+		<div id="room"></div>
+		<div id="room-list"></div>
+		<div id="messages" class="panel"></div>
+		<form id="send-room">
+			<div class="">
+				<div class="form-group">
+					<input id="send-message" type="text" class="form-control">
+				</div>
+				<div class="form-group">
+					<input id="send-button" type="submit" value="Send" class="btn btn-success">
+				</div>
+				<div id="help"></div>
+			</div>
+		</form>
+		<div id="help" class="well well-sm">
+		<h4>Chat commands:</h4>
+			<ul class="list-group">
+				<li class="list-group-item">Change nickname: <code>/nick[username]</code></li>
+				<li class="list-group-item">Join/create room: <code>/join[room name]</code></li>
+			</ul>
+		</div>
+	</div>
+	<!-- scripts -->
+	<script src="../node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="javascripts/chat.js"></script>
+	<script src="javascripts/chat_ui.js"></script>
+</body>
+
+</html>
