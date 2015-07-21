@@ -1,24 +1,17 @@
-body {
-    
-}
+body {}
 
-a {
-
-}
+a {}
 
 #content {
-    width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#room {
-    background-color: #ddd;
-    margin-bottom: 1em;
-}
+#room {}
 
 #messages {
-    width: 100%;
-    height: 300px;
-    background: lightgrey;
+	width: 100%;
+	height: 300px;
+	background: lightgrey;
 }

@@ -1,0 +1,95 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'socketio' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.5
+4 verbose install initial load of /Users/antongoncharov/apps/chatrooms/package.json
+5 warn package.json chatrooms@1.0.0 No README data
+6 verbose installManyTop reading scoped package data from /Users/antongoncharov/apps/chatrooms/node_modules/mime/package.json
+7 verbose installManyTop reading scoped package data from /Users/antongoncharov/apps/chatrooms/node_modules/socket.io/package.json
+8 info package.json mime@1.2.11 No license field.
+9 info package.json socket.io@0.9.17 No license field.
+10 verbose readDependencies loading dependencies from /Users/antongoncharov/apps/chatrooms/package.json
+11 silly cache add args [ 'socketio', null ]
+12 verbose cache add spec socketio
+13 silly cache add parsed spec { raw: 'socketio',
+13 silly cache add   scope: null,
+13 silly cache add   name: 'socketio',
+13 silly cache add   rawSpec: '',
+13 silly cache add   spec: '*',
+13 silly cache add   type: 'range' }
+14 silly addNamed socketio@*
+15 verbose addNamed "*" is a valid semver range for socketio
+16 silly addNameRange { name: 'socketio', range: '*', hasData: false }
+17 silly mapToRegistry name socketio
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry uri https://registry.npmjs.org/socketio
+21 verbose addNameRange registry:https://registry.npmjs.org/socketio not in flight; fetching
+22 verbose request uri https://registry.npmjs.org/socketio
+23 verbose request no auth needed
+24 info attempt registry request try #1 at 3:19:53 PM
+25 verbose request id f2cd79081b0eda77
+26 http request GET https://registry.npmjs.org/socketio
+27 http 404 https://registry.npmjs.org/socketio
+28 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+28 verbose headers   etag: '"5RGC7F7X0Z6GAGOGHVGFIPIJR"',
+28 verbose headers   'content-type': 'application/json',
+28 verbose headers   'cache-control': 'max-age=0',
+28 verbose headers   'content-length': '436',
+28 verbose headers   'accept-ranges': 'bytes',
+28 verbose headers   date: 'Mon, 20 Jul 2015 12:19:54 GMT',
+28 verbose headers   via: '1.1 varnish',
+28 verbose headers   age: '0',
+28 verbose headers   connection: 'keep-alive',
+28 verbose headers   'x-served-by': 'cache-fra1228-FRA',
+28 verbose headers   'x-cache': 'MISS',
+28 verbose headers   'x-cache-hits': '0',
+28 verbose headers   'x-timer': 'S1437394793.842461,VS0,VE189',
+28 verbose headers   vary: 'Accept' }
+29 silly get cb [ 404,
+29 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 silly get     etag: '"5RGC7F7X0Z6GAGOGHVGFIPIJR"',
+29 silly get     'content-type': 'application/json',
+29 silly get     'cache-control': 'max-age=0',
+29 silly get     'content-length': '436',
+29 silly get     'accept-ranges': 'bytes',
+29 silly get     date: 'Mon, 20 Jul 2015 12:19:54 GMT',
+29 silly get     via: '1.1 varnish',
+29 silly get     age: '0',
+29 silly get     connection: 'keep-alive',
+29 silly get     'x-served-by': 'cache-fra1228-FRA',
+29 silly get     'x-cache': 'MISS',
+29 silly get     'x-cache-hits': '0',
+29 silly get     'x-timer': 'S1437394793.842461,VS0,VE189',
+29 silly get     vary: 'Accept' } ]
+30 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/socketio
+30 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:239:14)
+30 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+30 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:354:22)
+30 verbose stack     at Request.emit (events.js:110:17)
+30 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1207:14)
+30 verbose stack     at Request.emit (events.js:129:20)
+30 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1153:12)
+30 verbose stack     at IncomingMessage.emit (events.js:129:20)
+30 verbose stack     at _stream_readable.js:908:16
+30 verbose stack     at process._tickCallback (node.js:355:11)
+31 verbose statusCode 404
+32 verbose pkgid socketio
+33 verbose cwd /Users/antongoncharov/apps/chatrooms
+34 error Darwin 15.0.0
+35 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "socketio"
+36 error node v0.12.5
+37 error npm  v2.11.2
+38 error code E404
+39 error 404 Registry returned 404 for GET on https://registry.npmjs.org/socketio
+39 error 404
+39 error 404 'socketio' is not in the npm registry.
+39 error 404 You should bug the author to publish it (or use the name yourself!)
+39 error 404 It was specified as a dependency of 'chatrooms'
+39 error 404
+39 error 404 Note that you can also install from a
+39 error 404 tarball, folder, http url, or git url.
+40 verbose exit [ 1, true ]
